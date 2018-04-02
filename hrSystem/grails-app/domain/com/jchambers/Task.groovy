@@ -10,11 +10,11 @@ String description
 Boolean taskCompleted
 
     static constraints = {
-taskName blank: false, minSize: 3, maxSize: 20
-numberOfPeople mazSize: 2
-sectionName blank: false
-department blank: false
-timeRequired blank: false, maxSize: 7
-description blank: false, maxSize: 40
+taskName blank: false, minSize: 3, maxSize: 20, nullable: false
+numberOfPeople mazSize: 2, nullable: false
+sectionName blank: false, nullable: false
+department blank: false, nullable: false
+timeRequired blank: false, maxSize: 7, nullable: false
+description blank: false, maxSize: 40, nullable: false
     }
 }

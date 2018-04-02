@@ -2,6 +2,8 @@ package com.jchambers
 
 class Employee {
 String fullName
+Manager manager
+Shift shift
 Date dateOfBirth
 String residence
 double hourlyRate
@@ -11,10 +13,12 @@ String taxCode
 String contract
 
     static constraints = {
-fullName blank: false, minSize: 7, maxSize: 25
-residence blank: false, minSize: 3, maxSize: 20
-employeeID blank: false, unique: true
-taxCode blank: false, minSize: 4
-contract minSize: 9, maxSize: 9
+fullName blank: false, minSize: 7, maxSize: 25, nullable: false
+residence blank: false, minSize: 3, maxSize: 20, nullable: false
+employeeID blank: false, unique: true, nullable: false
+taxCode blank: false, minSize: 4, nullable: false
+contract minSize: 9, maxSize: 9, nullable: false
+manager blank: true, nullable: true
+shift blank: true, nullable: true
     }
 }
