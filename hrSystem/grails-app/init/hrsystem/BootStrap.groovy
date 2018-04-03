@@ -3,6 +3,7 @@ package com.jchambers
 
 class BootStrap {
 def init = { servletContext ->
+/*
 def manager1=new Manager (fullName:'Steve Crossbar',
 userName:'scross',
 passWord:'secret2018',
@@ -131,7 +132,7 @@ shift1.addToTeams(team1)
 shift1.addToTeams(team2)
 shift2.addToTeams(team1)
 shift2.addToTeams(team2)
-
+*/
 }
     def destroy = {
     }
