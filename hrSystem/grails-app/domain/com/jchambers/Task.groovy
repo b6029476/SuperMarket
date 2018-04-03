@@ -8,6 +8,12 @@ String department
 String timeRequired
 String description
 Boolean taskCompleted
+static hasMany=[teams:Team, shifts:Shift, employees:Employee]
+static belongsTo=[Team, Shift]
+
+String toString(){
+return taskName
+}
 
     static constraints = {
 taskName blank: false, minSize: 3, maxSize: 20, nullable: false

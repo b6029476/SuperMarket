@@ -107,6 +107,31 @@ shift1.addToEmployees(employee2)
 leader2.addToEmployees(employee1)
 leader2.addToEmployees(employee2)
 
+team1.addToTasks(task1)
+team1.addToTasks(task2)
+team2.addToTasks(task1)
+team2.addToTasks(task2)
+
+team1.addToEmployees(employee1)
+team1.addToEmployees(employee2)
+team2.addToEmployees(employee1)
+team2.addToEmployees(employee2)
+
+shift1.addToTasks(task1)
+shift1.addToTasks(task2)
+shift2.addToTasks(task1)
+shift2.addToTasks(task2)
+
+task1.addToEmployees(employee1)
+task1.addToEmployees(employee2)
+task2.addToEmployees(employee1)
+task2.addToEmployees(employee2)
+
+shift1.addToTeams(team1)
+shift1.addToTeams(team2)
+shift2.addToTeams(team1)
+shift2.addToTeams(team2)
+
 }
     def destroy = {
     }

@@ -12,6 +12,13 @@ Date dateEmployed
 String taxCode
 String contract
 
+static hasMany=[teams:Team, tasks:Task]
+static belongsTo=[Team, Task]
+
+String toString(){
+return fullName
+}
+
     static constraints = {
 fullName blank: false, minSize: 7, maxSize: 25, nullable: false
 residence blank: false, minSize: 3, maxSize: 20, nullable: false

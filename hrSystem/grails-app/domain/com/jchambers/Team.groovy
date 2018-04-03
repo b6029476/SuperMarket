@@ -7,7 +7,12 @@ TeamLeader teamleader
 int numberOfEmployees
 String sectionName
 String description
+static hasMany=[tasks:Task, employees:Employee, shifts:Shift]
+static belongsTo=[Shift]
 
+String toString(){
+return teamName
+}
     static constraints = {
 
 teamName blank: false, minSize: 3, maxSize: 20, nullable: false

@@ -6,7 +6,12 @@ String timeOfDay
 String dayOfWeek
 int numberOfHours
 String startingTime
-static hasMany=[employees:Employee]
+static hasMany=[employees:Employee, tasks:Task, teams:Team]
+
+String toString(){
+return dayOfWeek
+}
+
     static constraints = {
 
 timeOfDay blank: false, maxSize: 10, minSize: 7, nullable: false
