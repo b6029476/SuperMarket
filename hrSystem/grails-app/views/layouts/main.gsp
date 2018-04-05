@@ -37,6 +37,7 @@
     </div>
 
     <g:layoutBody/>
+    <g:loginToggle/>
 
     <div class="footer" role="contentinfo"></div>
 

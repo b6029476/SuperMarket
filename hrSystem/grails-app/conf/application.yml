@@ -105,12 +105,12 @@ environments:
             url: jdbc:mysql://localhost:3306/hrSystem
     test:
         dataSource:
-            dbCreate: update
-            url: jdbc:mysql://localhost:3306/Test
+            dbCreate: 
+            url:
     production:
         dataSource:
-            dbCreate: none
-            url: jdbc:mysql://localhost:3306/production
+            dbCreate: 
+            url: 
             properties:
                 jmxEnabled: true
                 initialSize: 5
