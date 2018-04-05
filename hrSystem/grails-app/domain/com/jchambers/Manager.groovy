@@ -8,11 +8,33 @@ String managerEmail
 String office
 String department
 static hasMany=[teamleaders:TeamLeader, employees:Employee]
-
 String toString(){
 return fullName
 }
+def login(){
+}
+def validate(){
+def user = Manager.findByUsername(params.userName)
 
+if(user && user.passWord == params.passWord)
+
+session.user = user
+
+render view:'home'
+}
+else
+
+flash.message = "invalid username and password"
+
+render view:'login'
+
+}
+def logout(){
+
+session.user = null
+
+redirect(uri:'/')
+}
 
     static constraints ={
 fullName blank: false, minSize: 7, maxSize: 25, nullable: false
